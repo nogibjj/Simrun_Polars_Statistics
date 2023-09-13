@@ -1,6 +1,6 @@
 import polars as pl
 import matplotlib.pyplot as plt
-import numpy as np
+
 
 
 # Loading Dataset
@@ -10,21 +10,19 @@ wdi = pl.read_csv(
     "master/World_Development_Indicators/wdi_small_tidy_2015.csv"
 )
 
-
-# Function created to understand the descriptive statistices for the dataset of WorldBank Indicators
+# Function created to understand the descriptive statistics for the dataset of WorldBank Indicators
 def computation(dataframe):
     gdp_column = dataframe["GDP per capita (constant 2010 US$)"]
-    average = gdp_column.mean()
-    medium = gdp_column.median()
-    std_dev = gdp_column.std()
+    avg = gdp_column.mean()
+    med = gdp_column.median()
+    std = gdp_column.std()
 
     # Round the values to the desired number of decimal places
-    average = round(average, 10)
-    medium = round(medium, 10)
-    std_dev = round(std_dev, 2)
+    avg = round(avg, 10)
+    med = round(med, 10)
+    std = round(std, 2)
 
-    return (average, medium, std_dev)
-
+    return (avg, med, std)
 
 # Calling the function
 average, medium, std_dev = computation(wdi)
