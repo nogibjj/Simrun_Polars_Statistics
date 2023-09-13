@@ -4,6 +4,15 @@
 
 The dataset used in this analysis is sourced from the World Development Indicators dataset for the year 2015. You can access the data from the following URL: [World Development Indicators 2015 Dataset](https://media.githubusercontent.com/media/nickeubank/MIDS_Data/master/World_Development_Indicators/wdi_small_tidy_2015.csv).
 
+## Why Polars and Not Pandas?
+Both Polars and Pandas aim to be memory-efficient, but they achieve this goal through different strategies.
+
+Pandas, by default, loads an entire DataFrame into memory. While it provides options like memory-mapped files and chunking to manage memory for large datasets, it still can consume a significant amount of memory when working with very large datasets.
+
+Polars, on the other hand, focuses on optimizing operations performed on columns. This means that Polars is designed to execute operations in a way that minimizes memory usage. For example, when you perform operations on columns in Polars, it can process and release data in smaller chunks, reducing the overall memory footprint during the execution of these operations.
+
+So, in essence, Polars' efficiency in processing operations on columns can help reduce memory usage compared to Pandas, especially when working with large datasets and complex operations. However, it's essential to note that both libraries offer ways to manage memory efficiently, and the choice between them depends on the specific use case and requirements.
+
 ## Code Overview
 
 ### 1. Loading the Dataset
