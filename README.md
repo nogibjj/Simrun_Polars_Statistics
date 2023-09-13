@@ -31,7 +31,7 @@ After executing the code, the following descriptive statistics were obtained for
 
 These statistics offer valuable insights into the central tendency and spread of the GDP per capita data. They help us better understand the distribution of wealth among the countries in the World Bank dataset.
 
-![Visualization Example](https://github.com/nogibjj/Simrun_Polars_Statistics/issues/1#issue-1893689204)
+![Visualization Example](https://user-images.githubusercontent.com/141798228/266807301-e455df10-7308-42a5-bb9d-d055e5e45f8f.jpg)
 
 
 ## Conclusion
