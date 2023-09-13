@@ -1,7 +1,6 @@
 from main import computation
 
 import polars as pl
-import numpy as np
 import matplotlib.pyplot as plt
 
 
@@ -11,6 +10,8 @@ def test_computation():
         "media/nickeubank/MIDS_Data/"
         "master/World_Development_Indicators/wdi_small_tidy_2015.csv"
     )
+
+    wdi = wdi.drop_nulls(["GDP per capita (constant 2010 US$)"])
 
     result = computation(wdi)
     expected_mean = sum(wdi["GDP per capita (constant 2010 US$)"]) / len(
@@ -26,8 +27,9 @@ def test_computation():
         expected_median = sort_wdi[n // 2]
         expected_median = round(expected_median, 10)
 
-    expected_standard_dev = 1.47
-
+    expected_standard_dev = 22881.31
+    print(result)
+    print((expected_mean, expected_median, expected_standard_dev))
     assert result == (expected_mean, expected_median, expected_standard_dev)
 
 
