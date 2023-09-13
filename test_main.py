@@ -1,4 +1,4 @@
-from week3 import computation
+from main import computation
 
 import polars as pl
 import numpy as np
