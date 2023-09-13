@@ -1,5 +1,5 @@
 # POLARS Data Analysis: Log GDP per Capita and Infant Mortality Rate
-
+[![CI](https://github.com/nogibjj/Simrun_Polars_Statistics/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/Simrun_Polars_Statistics/actions/workflows/main.yml)
 ## Data Source
 
 The dataset used in this analysis is sourced from the World Development Indicators dataset for the year 2015. You can access the data from the following URL: [World Development Indicators 2015 Dataset](https://media.githubusercontent.com/media/nickeubank/MIDS_Data/master/World_Development_Indicators/wdi_small_tidy_2015.csv).
