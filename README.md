@@ -22,7 +22,7 @@ The script loads the World Development Indicators dataset into a Polars DataFram
 ### 3. Data Visualization
 The data visualization is where we see the real magic of this analysis come together. With an alpha transparency of 0.7 we can clearly see a trend, our GDP Per Capita is on the rise while our Infant Mortality Rate falls. However we can also see some outliers that serve as influential points in the graph and indicate a important note. We can note that sometimes country's who have a high GDP Per Capita might struggle with resource allocation, understanding population needs, or hospital resources. These downfalls show that some countries had a high Infant Mortality Rate despite having a high GDP Per Capita. 
 
-A legend was also created to in a clear white background to indicate how my descriptive statistics fall in my plot. This is showcase how these statistics play in the data plot visualization. 
+A legend was also created to in a clear white background to indicate how my descriptive statistics fall in my plot. This is to showcase how these statistics play in the data plot visualization. 
 
 ### 4. Descriptive Statistics
 
