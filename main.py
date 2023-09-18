@@ -2,7 +2,6 @@ import polars as pl
 import matplotlib.pyplot as plt
 
 
-
 # Loading Dataset
 wdi = pl.read_csv(
     "https://media.githubusercontent.com/"
@@ -23,6 +22,7 @@ def computation(dataframe):
     std = round(std, 2)
 
     return (avg, med, std)
+
 
 # Calling the function
 average, medium, std_dev = computation(wdi)
